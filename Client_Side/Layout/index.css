@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: auto;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.main-container{
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.nav-bar{
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: white;
+}
+
+.content{
+    position: relative;
+    height: 90%;
+    width: 100%;
+    background-color: green;
+}
+
+.footer{
+    height: 10%;
+    width: 100%;
+    background-color: #0879BB;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}

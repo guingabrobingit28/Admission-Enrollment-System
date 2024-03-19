@@ -1,0 +1,18 @@
+.nav-item a{
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.navbar-brand{
+    color: white;
+}
+
+.logo{
+    height: 4em;
+    float: left;
+    z-index: 1;
+    position: absolute;
+    top: .3em;
+    left: 2em;
+}

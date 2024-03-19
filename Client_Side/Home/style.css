@@ -1,0 +1,187 @@
+.header-content{
+    height: 35%;
+    width: 100%;
+    background-color: #F3F8FA;
+    padding: 1em;
+}
+.main-content{
+    /* background-color: #F3F8FA; */
+    background-color: green;
+    height: 65%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-content-container{
+    height: 30em;
+    background-image: url('../../Background/bestlink6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    border-radius: 10px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 4px 4px;
+}
+
+.sub-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
+.header-content-container h1{
+    font-weight: bolder;
+    color: white;
+    margin-top: 2em;
+ 
+  
+}
+
+.header-content-container p{
+    font-weight: bolder;
+    padding: 1em 10em;
+    width: 70%;
+    color: white;
+}
+
+
+/* bbox */
+.count{
+    position: relative;
+    height: 30%;
+    width: 100%;
+    /* background-color: #D7D7D7; */
+    background-color: #F3F8FA;
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2em;
+   
+}
+
+.count .box{
+    position: relative;
+    height: 15em;
+    width: 20em;
+    box-shadow: 0 5px 26px 0 rgba(68, 88, 144, 0.14);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #fff;
+    background: #fff;
+
+    
+   
+}
+
+.count .box:hover{
+    border: 1px solid chartreuse;
+    transition: .5s ease-in-out;
+
+}
+
+.box-head{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.num{
+    font-size: 1.2em;
+    font-weight: bolder;
+   
+}
+.box-body{
+    height: 40%;
+    width: 100%;
+   
+}
+
+.box-body p{
+    padding: 0 2em ;
+    font-family: 'Times New Roman', Times, serif;
+    color: #666564;
+}
+
+.box-icons{
+    height: 4.5em;
+    margin: 1em 1em;
+   
+}
+
+/* mission vision */
+
+.vision-mision{
+    position: relative;
+    height: 25em;
+    width: 100%;
+    background-color: #D7D7D7;
+    display: flex;
+    flex-direction: row;
+}
+
+.img-container{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5em 0 .5em .5em;
+}
+.img-border{
+    height: 100%;
+    width: 100%;
+    background-color: #F3F8FA;
+    padding: .5em;
+    box-shadow: 0 5px 26px 0 rgba(68, 88, 144, 0.14);
+}
+
+.img-border img{
+    height: 100%;
+    width: 100%;
+}
+
+/*  */
+.mission-vision-content{
+    height: 100%;
+    width: 50%;
+    padding: .5em .5em .5em 0;
+    /* background-color: #F3F8FA; */
+}
+.mv-content{
+    height: 100%;
+    width: 100%;
+    padding: .5em;
+    background-color: #F3F8FA;
+}
+
+/* requirements */
+
+.req-container{
+    height: 30%;
+    width: 100%;
+    background-color: #F3F8FA;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.req-container h5{
+    font-family: 'Times New Roman', Times, serif;
+    color: #666564;
+    font-weight: bolder;
+
+}
+

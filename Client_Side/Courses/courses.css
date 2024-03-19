@@ -1,0 +1,92 @@
+.courses-container{
+    height: auto;
+    width: 100%;
+    background-color: #F3F8F9;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.bg-courses{
+    height: 10em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url(../../Background/bestlink5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+ 
+   
+}
+.bg-courses label{
+    font-size: 3em;
+    font-weight: bold;
+    margin: 1em 0 0 2em;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    letter-spacing: 2px;
+    
+}
+
+.courses-content{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 1em 2em;
+
+}
+
+.course-box{
+    height: auto;
+    width: 19em;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.sub-course-box{
+    height: auto;
+    width: 18em;
+    box-shadow: 0 5px 16px 0 rgba(68, 88, 144, 0.14);
+    border: 1px solid #fff;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin: 0 0 5em 0 ;
+
+}
+
+.sub-course-box:hover{
+    border: .5px solid rgb(14, 233, 14);
+}
+
+.box-header{
+    height: 3em;
+    width: 100%;
+    background-color: #0879BB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-header label{
+    color: white;
+    font-weight: 600;
+}
+
+.box-body{
+    height: 80%;
+    width: 100%;
+    padding: 1em;
+}
+
+.box-body p{
+    color: gray;
+    font-size: .9em;
+}

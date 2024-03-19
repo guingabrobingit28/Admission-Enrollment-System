@@ -1,0 +1,122 @@
+.courses-container{
+    height: auto;
+    width: 100%;
+    background-color: #F3F8F9;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.bg-courses{
+    height: 20em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url(../../Background/bestlink5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+ 
+   
+}
+.bg-courses label{
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 1em 0 0 2em;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    letter-spacing: 2px;
+    
+}
+
+.courses-content{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F3F8FA;
+    padding: 0 3em;
+
+}
+
+.head-application{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 15em;
+
+}
+
+.head-application p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    gap: 1.5em;
+}
+
+.content-application {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 3em 0 0 2em;
+    gap: .5em;
+    border-top: dashed 1px black ;
+    
+}
+
+.content-application label{
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.content-requirements{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding:  2em 0 2em 2em;
+    gap: 5em;
+
+}
+.box-requirements {
+    height: auto;
+    width: 30%;
+
+    border-top: solid 3px grey;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+}
+
+.box-requirements label{
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.box-requirements ul > li {
+    line-height: 3em;
+}
+
+.btn-redirect-admission{
+    height: 10em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+
+.redirect{
+    height: 2em;
+    margin-left: 5em;
+
+}

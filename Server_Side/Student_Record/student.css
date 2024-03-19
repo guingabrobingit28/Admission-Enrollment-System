@@ -1,0 +1,331 @@
+.admission-application-container{
+    position: relative;
+    background-color: #e6e6e6;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em 0 3em;
+}
+
+.sub-admission-container{
+    position: relative;
+    background-color: #e6e6e6;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em 0 1em;
+    
+}
+
+.admission-header{
+    background-color: #e6e6e6;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+
+}
+
+.admission-header label{
+    font-size: 1.6em;
+    color: #8C999F;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 16px 0 rgba(68, 88, 144, 0.14);
+}
+.admission-content{
+    margin: 1em 0 0 0;
+    background-color: #F3F8FA;
+    box-shadow: 0 5px 16px 0 rgba(68, 88, 144, 0.14);
+    border: solid 1px #F3F8FA ;
+    height: auto;
+    width: 100%;
+}
+.admission-content-header{
+    height: 5em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+   
+
+    /* background-color: aqua; */
+}
+
+/* LEFT */
+.admission-content-header > .label-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    /* background-color: #4796BD; */
+}
+
+.label-container form{
+    height: 100%;
+    width: 100%;
+    /* background-color: greenyellow; */
+    padding: .5em 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4em;
+}
+
+.label-container form  > button{
+    height: 2em;
+    width: 8em;
+    background-color: #4796BD;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.label-container form > select , option{
+    height: 2em;
+    width: 8em;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    background-color: #8C999F;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.admission-content-header > .label-container label{
+    margin-left: .7em;
+
+}
+
+/* RIGHT */
+.admission-content-header > form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: .5em;
+}
+
+.admission-content-header > form > input{
+    height: 2.5em;
+    width: 20em;
+    border: solid 1px #95A5A6;
+    padding-left: 1em;
+}
+
+.admission-content-header > form > button{
+    height: 2.5em;
+    width: 10em;
+    font-size: 1.2e;
+    letter-spacing: 1px;
+    color: white;
+    background-color: #95A5A6;
+}
+
+
+.admission-content-header label{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #8C999F;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    
+}
+
+.admission-content-body{
+    height: auto;
+    width: 100%;
+
+    padding: 0 1em 15em 1em;
+}
+/* table design */
+.admission-content-body table{
+    position: relative;
+	width: 100%;
+	border-collapse: collapse;
+ 
+}
+
+.admission-content-body table thead tr{
+	background-color: #95A5A6;
+ 	font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+ 	letter-spacing: 1px;
+	color: white;
+	font-weight: 600;
+
+}
+
+.admission-content-body table thead th{
+	width: 200px;
+	height: 2.8em;;
+}
+
+
+
+.admission-content-body table tbody tr {
+	position: relative;
+	text-align: center;
+	color: #2e2e1f;
+	cursor: pointer;
+	height: 30px;
+	border-bottom: solid .5px black;
+}
+
+.admission-content-body tbody tr:hover{
+	transform: scale(1.001);
+	text-align: center;
+	box-shadow: 2px 4px 2px rgba(30, 30, 30, .5), 2px 2px 4px rgba(0, 0, 0, .5);
+
+}
+
+.admission-content-body tbody tr td{
+	padding: 1em 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+
+}
+
+.admission-content-body tr tbody tr:nth-child(even)
+{
+	background-color: #c2c2a3;
+}
+
+.admission-content-body tbody > tr > td > a{
+    margin: 0 .4em;
+}
+.action-icons{
+    height: 2em;
+ 
+}
+
+.cross{
+    height: 1.4em;
+    margin: 0 0 .3em 0;
+}
+/* FOR MODAL */
+.modal {
+    display: none; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    
+}
+
+.modal-container{
+    height: 100%;
+    width: 60%;
+    background-color: #F3F8FA;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 4px;
+    border: #F3F8FA solid 1px;
+}
+
+.student-header{
+    height: 8%;
+    width: 100%;
+    background-color: #4796BD;
+    display: flex;
+    flex-direction: row;
+}
+
+.student-header label{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2em;
+    color: white;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
+
+.student-header a{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.student-body{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    overflow-y: auto;
+}
+
+.student-info{
+    height: 5em;
+    width: 100%;
+    /* border: solid 1px black; */
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.student-input{
+    height: 100%;
+    width: 25%;
+    /* border: solid 1px black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: .5em 1em;
+    gap: .3em;
+}
+
+.student-input label{
+    color: darkgrey;
+}
+
+.student-input input,select{
+    height: 2em;
+    border-radius: 5px;
+    padding-left: 1em;
+}
+
+
+.student-submit{
+    height: 10em;
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 1px black; */
+}
+
+.student-submit button{
+    background-color: #4796BD;
+    font-size: 1.2em;
+    color: white;
+    letter-spacing: 2px;
+    width: 10em;
+    height: 2em;
+    border-radius: 5px;
+}
+/* icons */
+.close{
+    height: 2em;
+}
+.icons{
+    height: 1.5em;
+    margin-left: .5em;
+    margin-top: .5em;
+}

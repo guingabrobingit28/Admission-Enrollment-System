@@ -1,0 +1,120 @@
+.sidebar-container {
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar-header{
+    height: 20%;
+    width: 100%;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: .5px solid wheat;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+#user-icons{
+    height: 4.5em;
+    width: 4.5em;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#user_email{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: normal;
+    color: white;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+.sidebar-content{
+    height: 80%;
+    width: 100%;
+    /* background-color: green; */
+}
+
+.sidebar-content > ul li{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.sidebar-content > ul li:hover{
+    border-left: solid 5px #38f56b;
+}
+
+.sidebar-content > ul > li > a{
+    font-weight: bold;
+    color:white;
+    font-size: 1em;
+    text-decoration: none;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: .5em;
+
+}
+
+#arr-maintinance{
+    margin: .3em 0 0 3em;
+}
+.right-arrow{
+    height: .8em;
+    margin: .3em 0 0 4em;
+    filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(0deg);
+}
+
+#arr-ryt{
+    margin-left: 5em;
+
+}
+
+.down-arrow{
+    transform: rotate(90deg);
+}
+
+.sub-transaction , .sub-admission , .sub-Maintinance {
+    display: none;
+    flex-direction: column;
+    border: none;
+    line-height: .5em;
+    background-color: #5AA5D1;
+    width: 100%;
+    margin-top: 1em;
+}
+
+
+.sub-transaction li a{
+    text-decoration: none;
+    color: white;
+    margin: 0 0 0 4.5em;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    
+}
+
+.sub-admission > li > a{
+    text-decoration: none;
+    color: white;
+    margin: 0 0 0 4.5em;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    
+}
+
+           
+.nav-icons{
+    height: 1.2em;
+    margin: 0 .5em 0 1em;
+    filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(0deg);
+   
+}
+
+

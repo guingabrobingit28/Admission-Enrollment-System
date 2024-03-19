@@ -1,0 +1,79 @@
+.setting-container{
+    background-color: #F3F8FA;
+    height: 100%;
+    width: 100%;
+    padding: 1em 2em 0 2em ;
+}
+
+.sub-setting{
+    height: 100%;
+    width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0 5px 16px 0 rgba(68, 88, 144, 0.14);
+    border: 1px solid #fff;
+
+}
+
+.setting-head{
+    height: 10%;
+    width: 100%;
+    background-color: #95A5A6;
+    display: flex;
+    align-items: center;
+}
+
+.setting-head label{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-left: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.setting-body{
+    height: 90%;
+    width: 100%;
+
+}
+
+.setting-body form{
+    height: 100%;
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+
+    gap: 1em;
+    padding: 1em 0 0 2em;
+    
+}
+
+.setting-body form > label , p{
+    font-size: 1.2em;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.setting-body form > p{
+    font-weight: 200;
+    font-size: 1em;
+    margin-left: .2em;
+    color: darkgray;
+}
+
+.setting-body form > input{
+    height: 3.3em;
+    padding-left: 1em;
+    width: 25em;
+    border-radius: 5px;
+}
+
+.setting-body form > button{
+    height: 3.2em;
+    width: 25em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    background-color: #4796BD;
+    letter-spacing: 2px;
+}

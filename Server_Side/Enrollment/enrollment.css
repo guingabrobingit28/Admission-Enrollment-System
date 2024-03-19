@@ -1,0 +1,526 @@
+.admission-application-container{
+    position: relative;
+    background-color: #e6e6e6;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em 0 3em;
+}
+
+.sub-admission-container{
+    position: relative;
+    background-color: #e6e6e6;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em 0 1em;
+    
+}
+
+.admission-header{
+    background-color: #e6e6e6;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+
+}
+
+.admission-header label{
+    font-size: 1.6em;
+    color: #8C999F;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 16px 0 rgba(68, 88, 144, 0.14);
+}
+.admission-content{
+    margin: 1em 0 0 0;
+    background-color: #F3F8FA;
+    box-shadow: 0 5px 16px 0 rgba(68, 88, 144, 0.14);
+    border: solid 1px #F3F8FA ;
+    height: auto;
+    width: 100%;
+}
+.admission-content-header{
+    height: 5em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+   
+
+    /* background-color: aqua; */
+}
+
+
+.admission-content-header > .label-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+}
+
+.label-container > select , option{
+    height: 3em;
+    width: 15em;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    background-color: #8C999F;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.admission-content-header > .label-container label{
+    margin-left: .7em;
+
+}
+
+.admission-content-header > form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: .5em;
+}
+
+.admission-content-header > form > input{
+    height: 2.5em;
+    width: 20em;
+    border: solid 1px #95A5A6;
+    padding-left: 1em;
+}
+
+.admission-content-header > form > button{
+    height: 2.5em;
+    width: 10em;
+    font-size: 1.2e;
+    letter-spacing: 1px;
+    color: white;
+    background-color: #95A5A6;
+}
+
+
+.admission-content-header label{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #8C999F;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    
+}
+
+.admission-content-body{
+    height: auto;
+    width: 100%;
+
+    padding: 0 1em 15em 1em;
+}
+/* table design */
+.admission-content-body table{
+    position: relative;
+	width: 100%;
+	border-collapse: collapse;
+ 
+}
+
+.admission-content-body table thead tr{
+	background-color: #95A5A6;
+ 	font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+ 	letter-spacing: 1px;
+	color: white;
+	font-weight: 600;
+
+}
+
+.admission-content-body table thead th{
+	width: 200px;
+	height: 2.8em;;
+}
+
+
+
+.admission-content-body table tbody tr {
+	position: relative;
+	text-align: center;
+	color: #2e2e1f;
+	cursor: pointer;
+	height: 30px;
+	border-bottom: solid .5px black;
+}
+
+.admission-content-body tbody tr:hover{
+	transform: scale(1.001);
+	text-align: center;
+	box-shadow: 2px 4px 2px rgba(30, 30, 30, .5), 2px 2px 4px rgba(0, 0, 0, .5);
+
+}
+
+.admission-content-body tbody tr td{
+	padding: 1em 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+
+}
+
+.admission-content-body tr tbody tr:nth-child(even)
+{
+	background-color: #c2c2a3;
+}
+
+.admission-content-body tbody > tr > td > a{
+    margin: 0 .4em;
+}
+.action-icons{
+    height: 2em;
+ 
+}
+
+.cross{
+    height: 1.4em;
+    margin: 0 0 .3em 0;
+}
+
+/* FOR MODAL */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Sit on top */
+    
+}
+
+.modal-container{
+    height: 90%;
+    width: 40%;
+    background-color: #F3F8FA;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.modal-header{
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    width: 100%;
+}
+
+.modal-header label{
+    width: 90%;
+    height: 100%;
+    background-color: #5AA5D1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 3em;
+    
+}
+
+.modal-header a{
+    width: 10%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-left: 1em;
+    background-color: #5AA5D1;
+}
+
+.modal-header a > img{
+    height: 2em;
+    
+}
+
+
+.modal-body{
+    height: 90%;
+    width: 100%;
+    border: solid grey 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.modal-body form{
+    height: 100%;
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: row;
+}
+
+.requirements{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.checklist{
+    height: 100%;
+    width: 100%;
+    background-color: ghostwhite;
+    /* background-color: yellow; */
+    flex-direction: column;
+    
+}
+
+.checklist > .row{
+    height: 10%;
+    width: 100%;
+    display :flex;
+    flex-direction: row;
+    /* border-bottom: 1px solid black; */
+    align-items: center;
+    gap: 1em;
+    padding-left: 3em;
+    margin-top: .4em;
+  
+}
+
+.remark{
+    height: 40%;
+    width: 100%;
+    /* background-color: #95A5A6; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    flex-direction: row;
+    gap: 1em;
+
+}
+
+.remark select{
+    height: 3em;
+    width: 10em;
+}
+
+
+
+
+.balance{
+    display: flex;
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.bal-head{
+    height: 25%;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 1em;
+}
+
+.bal-head label{
+    color: green;
+    font-size: 1.3EM;
+}
+
+.bal-head input{
+    height: 5em;
+    padding-left: 1em;
+    border-radius: 5px;
+}
+
+.bal-remark{
+    height:30%;
+    width: 100%;
+  
+    gap: 1EM;
+    display: flex;
+ 
+    padding: 1EM;
+    flex-direction: column;
+}
+
+.bal-remark textarea{
+    border-radius: 5px;
+    padding: 1em;
+}
+.bal-remark button{
+    border-radius: 5px;
+    height: 4em;
+    color: white;
+    background-color: #5AA5D1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* returnee */
+
+.modal-returnee{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Sit on top */
+}
+
+.returnee-container{
+    height: 13em;
+    width: 37em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.head-returnee{
+    width: 100%;
+    height: 12%;
+    background-color: #5AA5D1;
+    display: flex;
+    flex-direction: row;
+}
+
+.head-returnee label{
+    width: 90%;
+    height: 100%;
+    /* border: solid 1px black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    padding-left: 4em;
+}
+
+.head-returnee a{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1em;
+}
+
+.icons{
+    height: 1.5em;
+    
+}
+
+.body-returnee{
+    height: 89%;
+    width: 100%;
+    /* background-color: #95A5A6; */
+}
+
+.body-returnee form{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.row-returnee{
+    height: 8em;
+    width: 100%;
+    /* border: solid 1px black; */
+    display: flex;
+    flex-direction: row;
+
+}
+
+.returnee-info{
+    height: 100%;
+    width: 33.33%;
+    /* background-color: #95A5A6; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: solid 1px black; */
+    gap: .5em;
+}
+
+.returnee-info label{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.returnee-info select{
+    height: 2.5em;
+    width: 12em;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.payment-retunee{
+    /* border: 1px solid black; */
+    width: 50%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.payment-retunee label{
+    font-size: 1.2em;
+}
+
+.payment-retunee input,select{
+    height: 3em;
+    width: 13em;
+    border-radius: 5px;
+    padding-left: 1em;
+}
+
+#btn-returnee{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-returnee button{
+    height: 2.5em;
+    width: 15em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #5AA5D1;
+    border-radius: 5px;
+}

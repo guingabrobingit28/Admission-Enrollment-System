@@ -1,0 +1,188 @@
+.courses-container{
+    height: auto;
+    width: 100%;
+    background-color: #F3F8F9;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.bg-courses{
+    height: 10em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url(../../Background/bestlink5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+ 
+   
+}
+.bg-courses label{
+    font-size: 3em;
+    font-weight: bold;
+    margin: 1em 0 0 2em;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    letter-spacing: 2px;
+    
+}
+
+.courses-content{
+    height: 35em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8em;
+   
+}
+
+.inquire-container{
+    height: 90%;
+    width: 90%;
+
+    margin-top: 8em;
+    display: flex;
+    flex-direction: row;
+}
+
+.inquire-contact{
+    height: 100%;
+    width: 40%;
+    
+    padding: 1em;
+}
+
+.sub-inquire-contact{
+    height: 100%;
+    width: 100%;
+    border: solid 2px darkgrey;
+    border-radius: 5px;
+}
+
+.box-contact{
+    height: 33.33%;
+    width: 100%;
+    border-bottom: solid 2px darkgrey;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.box-contact label{
+    font-weight: 600;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inquire-data{
+    height: 100%;
+    width: 60%;
+
+  
+    
+}
+
+.inquire-data form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.inquire-data form .box-data{
+    height: 5em;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.inquire-data form .box-data-message{
+    height: 15em;
+    width: 100%;
+   
+    display: flex;
+    padding: 2em 1.5em;
+
+
+}
+
+.inquire-data form .box-data-message textarea{
+    height: 100%;
+    width: 42.5em;
+    border: solid 2px darkgrey;
+    background: transparent;
+    outline: none;
+    border-radius: 5px;
+    padding: .5em 1em;
+}
+.inquire-data form .box-data-message textarea:hover{
+    border: solid 1px crimson;
+}
+
+.inquire-data form .box-data-message textarea::placeholder{
+    font-weight: bold;
+}
+
+.inquire-data form .box-data > input{
+    height: 2.5em;
+    width: 20em;
+    border: solid 2px darkgrey;
+    background: transparent;
+    border-radius: 5px;
+    margin-left: 1.3em;
+    padding-left: .5em;
+}
+
+.inquire-data form .box-data > input::placeholder{
+    font-weight: bold;
+}
+
+.inquire-data form .box-data > input:hover{
+    border: solid 1px crimson;
+}
+
+.inquire-data form .box-data > .phone{
+    height: 2.5em;
+    width: 42.5em;
+    border: solid 2px darkgrey;
+    background: transparent;
+    border-radius: 5px;
+    margin-left: 1.3em;
+    padding-left: .5em;
+}
+
+
+
+.btn-inquire{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-inquire button{
+    height: 2.5em;
+    width: 15em;
+    border-radius: 5px;
+    background-color: #5AA5D1;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-inquire button:hover{
+    background-color: #0879BB;
+}
+
+
+.contact-icons{
+    height: 1.5em;
+    margin: 0 0 0 .5em;
+}
+

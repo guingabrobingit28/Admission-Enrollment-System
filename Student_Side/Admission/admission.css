@@ -1,0 +1,160 @@
+.admission-container{
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    display: flex;
+}
+
+.sub-admission-container{
+    position: relative;
+    background-color: #e6e6e6;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 3em 0 3em;
+}
+
+.admission-header{
+    background-color: #e6e6e6;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+
+}
+
+.admission-header label{
+    font-size: 1.6em;
+    color: #8C999F;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 16px 0 rgba(68, 88, 144, 0.14);
+}
+.admission-content{
+    margin: 1em 0 0 0;
+    background-color: #F3F8FA;
+    box-shadow: 0 5px 16px 0 rgba(68, 88, 144, 0.14);
+    border: solid 1px #F3F8FA ;
+    height: auto;
+    width: 100%;
+}
+.admission-content form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    
+}
+
+.student-input-con{
+    height: 6em;
+    width: 100%;
+    border-radius: 5px;
+    /* border:  solid 1px black; */
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+}
+
+.student-label{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* border: solid 1px black; */
+    
+
+}
+
+.student-label label{
+    font-weight: 600;
+    color: #8C999F;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+    margin: 1.1em 0 0 0;
+}
+
+.studen-input{
+    height: 100%;
+    width: 40%;
+    /* border: solid 1px black; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5em;
+  
+}
+
+.studen-input label{
+    font-weight: 600;
+    color: #8C999F;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.studen-input input , select{
+    width: 15em;
+    height: 2.2em;
+    border-radius: 5px;
+    padding-left: .5em;
+    font-size: 1.2em;
+    background-color: transparent;
+    border: #8C999F solid 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bod{
+    
+    width: 40em;
+}
+
+.sub-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.admission-btn{
+    height: 10em;
+    width: 100%;
+    /* background-color: red; */
+    margin-bottom: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admission-btn button{
+    width: 15em;
+    height: 3em;
+    background-color: #5AA5D1;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+}
+.close-submission-container{
+    height: 20%;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+.sub-close-container{
+    background-color: #F3F8FA;
+    height: 40%;
+    width: 38%;
+    margin-left: 3em;
+    display: flex;
+    margin-top: 1em;
+    align-items: center;
+    box-shadow: 1px 2px 4px 16px solid rgba(255,255,255,0.2);
+    
+}
+
+.sub-close-container p{
+    color: darkgray;
+    
+}

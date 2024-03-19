@@ -1,0 +1,103 @@
+.courses-container{
+    height: auto;
+    width: 100%;
+    background-color: #F3F8F9;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.bg-courses{
+    height: 10em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url(../../Background/bestlink5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+ 
+   
+}
+.bg-courses label{
+    font-size: 3em;
+    font-weight: bold;
+    margin: 1em 0 0 2em;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    letter-spacing: 2px;
+    
+}
+
+.courses-content{
+    height: auto;
+    width: 100%;
+    display: flex;
+    margin-bottom: 8em;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 2em 0;
+   
+}
+
+
+.label-notice{
+    background: #fff;
+    width: 100%;
+    height: 5em;
+    display: flex;
+    align-items: center;
+}
+
+.label-notice label{
+    margin-left: 5em;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.public-container{
+    box-shadow: 0 5px 16px 0 rgba(68, 88, 144, 0.14);
+    border: 1px solid #fff;
+    background: #fff;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    gap: 1em 0;
+}
+
+.public-container .pub-img-container{
+    box-shadow: 0 5px 16px 0 rgba(68, 88, 144, 0.14);
+    border: 1px solid #fff;
+    height: 100%;
+    width: 30%;
+}
+
+.pub-img-container img{
+    height: 100%;
+    width: 100%;
+ 
+}
+
+.public-container .pub-con-container{
+
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 3em;
+    
+}
+.pub-con-container .title-pub{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.content-pub{
+    color: grey;
+    
+}
